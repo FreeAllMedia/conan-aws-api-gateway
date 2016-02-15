@@ -1,7 +1,7 @@
 {
   "generatorVersion": "0.2.21",
   "name": "conan-aws-api-gateway",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Conan: The Deployer plugin for the Api Gateway service of the AWS provider.",
   "main": "es5/lib/conanAwsApiGatewayPlugin.js",
   "scripts": {
