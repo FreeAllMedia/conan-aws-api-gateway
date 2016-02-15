@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import putIntegrationStep from "../../steps/putIntegrationStep.js";
+import putIntegrationStep from "../../lib/steps/putIntegrationStep.js";
 
 describe("putIntegrationStep", () => {
 	let putIntegrationSpy,

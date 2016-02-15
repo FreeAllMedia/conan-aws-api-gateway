@@ -1,4 +1,4 @@
-import ConanComponent from "../../../components/conanComponent.js";
+import { ConanComponent } from "conan";
 import findApiResourceByPathStep from "../steps/findApiResourceByPathStep.js";
 import createApiResourcesStep from "../steps/createApiResourcesStep.js";
 import findResourceMethodStep from "../steps/findResourceMethodStep.js";
@@ -9,7 +9,7 @@ import putMethodResponseStep from "../steps/putMethodResponseStep.js";
 import findMethodResponseStep from "../steps/findMethodResponseStep.js";
 import addPermissionStep from "../steps/addPermissionStep.js";
 import getAccountIdStep from "../steps/getAccountIdStep.js";
-import findLambdaByNameStep from "../../aws-lambda/steps/findLambdaByNameStep.js";
+import findLambdaByNameStep from "../steps/findLambdaByNameStep.js";
 
 import findApiStageByNameStep from "../steps/findApiStageByNameStep.js";
 

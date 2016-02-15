@@ -1,8 +1,7 @@
-import Conan from "conan";
-import ConanAwsApiGatewayResource from "../../components/conanAwsApiGatewayResource.js";
-import findApiStageByNameStep from "../../steps/findApiStageByNameStep.js";
-import findLambdaByNameStep from "../../../aws-lambda/steps/findLambdaByNameStep.js";
-import ConanComponent from "../../../../components/conanComponent.js";
+import Conan, { ConanComponent } from "conan";
+import ConanAwsApiGatewayResource from "../../lib/components/conanAwsApiGatewayResource.js";
+import findApiStageByNameStep from "../../lib/steps/findApiStageByNameStep.js";
+import findLambdaByNameStep from "../../lib/steps/findLambdaByNameStep.js";
 import inflect from "jargon";
 
 describe("ConanAwsApiGatewayResource(conan)", () => {

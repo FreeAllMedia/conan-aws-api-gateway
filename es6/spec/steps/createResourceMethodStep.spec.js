@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import createResourceMethodStep from "../../steps/createResourceMethodStep.js";
+import createResourceMethodStep from "../../lib/steps/createResourceMethodStep.js";
 
 describe("createResourceMethodStep", () => {
 	let putMethodSpy,

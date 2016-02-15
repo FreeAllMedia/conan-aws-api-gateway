@@ -1,6 +1,6 @@
 import Conan from "conan";
-import ConanAwsApiGateway from "../components/conanAwsApiGateway.js";
-import ConanAwsApiGatewayPlugin from "../..";
+import ConanAwsApiGateway from "../lib/components/conanAwsApiGateway.js";
+import ConanAwsApiGatewayPlugin from "../lib/conanAwsApiGatewayPlugin.js";
 import sinon from "sinon";
 import AWS from "aws-sdk";
 

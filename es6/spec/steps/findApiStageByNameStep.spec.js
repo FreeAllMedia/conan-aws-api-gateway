@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import findApiStageByNameStep from "../../steps/findApiStageByNameStep.js";
+import findApiStageByNameStep from "../../lib/steps/findApiStageByNameStep.js";
 
 describe("findApiStageByNameStep", () => {
 	let getStageSpy,

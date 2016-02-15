@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import putMethodResponseStep from "../../steps/putMethodResponseStep.js";
+import putMethodResponseStep from "../../lib/steps/putMethodResponseStep.js";
 
 describe("putMethodResponseStep", () => {
 	let putMethodResponseSpy,

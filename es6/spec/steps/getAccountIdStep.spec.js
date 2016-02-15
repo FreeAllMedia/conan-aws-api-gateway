@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import getAccountIdStep from "../../steps/getAccountIdStep.js";
+import getAccountIdStep from "../../lib/steps/getAccountIdStep.js";
 
 describe("getAccountIdStep", () => {
 	let getUserSpy,

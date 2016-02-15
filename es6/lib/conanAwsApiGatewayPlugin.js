@@ -1,6 +1,3 @@
-import requireHack from "./babel6.require.hack.js";
-requireHack();
-
 import ConanAwsApiGateway from "./components/conanAwsApiGateway.js";
 import AWS from "aws-sdk";
 

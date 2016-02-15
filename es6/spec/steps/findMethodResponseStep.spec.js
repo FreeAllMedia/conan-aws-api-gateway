@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import findMethodResponseStep from "../../steps/findMethodResponseStep.js";
+import findMethodResponseStep from "../../lib/steps/findMethodResponseStep.js";
 
 describe("findMethodResponseStep", () => {
 	let getMethodResponseSpy,

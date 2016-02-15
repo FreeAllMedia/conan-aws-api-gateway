@@ -1,4 +1,4 @@
-import ConanComponent from "../../../components/conanComponent.js";
+import { ConanComponent } from "conan";
 import ConanAwsApiGatewayStage from "./conanAwsApiGatewayStage.js";
 import findApiByNameStep from "../steps/findApiByNameStep.js";
 import updateApiStep from "../steps/updateApiStep.js";

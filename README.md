@@ -3,10 +3,11 @@
 Conan: The Deployer plugin for the Api Gateway service of the AWS provider.
 
 ```javascript
-import Conan-aws-api-gateway from "conan-aws-api-gateway";
+import conan from "conan";
+import ConanAwsApiGatewayPlugin from "conan-aws-api-gateway";
 
-const conan-aws-api-gateway = new Conan-aws-api-gateway;
-conan-aws-api-gateway.saySomething(); // will output "Something"
+conan = new Conan();
+conan.use(ConanAwsApiGatewayPlugin);
 ```
 
 # Quality and Compatibility
@@ -25,41 +26,19 @@ conan-aws-api-gateway.saySomething(); // will output "Something"
 ```
 npm install conan-aws-api-gateway
 cd node_modules/conan-aws-api-gateway
-gulp test-local
+gulp test
 ```
 
 # Installation
 
-Copy and paste the following command into your terminal to install Conan-aws-api-gateway:
+Copy and paste the following command into your terminal to install conan-aws-api-gateway:
 
 ```
-npm install conan-aws-api-gateway --save
-```
-
-## Import / Require
-
-```
-// ES6
-import conan-aws-api-gateway from "conan-aws-api-gateway";
-```
-
-```
-// ES5
-var conan-aws-api-gateway = require("conan-aws-api-gateway");
-```
-
-```
-// Require.js
-define(["require"] , function (require) {
-    var conan-aws-api-gateway = require("conan-aws-api-gateway");
-});
+npm install conan-aws-api-gateway --save-dev
 ```
 
 # Getting Started
 
-## More insights
-
-In order to say something, you should know that `conan-aws-api-gateway()` ... (add your test here)
 
 # How to Contribute
 
@@ -76,5 +55,3 @@ It's easy to run the test suite locally, and *highly recommended* if you're usin
 ```
 npm test
 ```
-
-

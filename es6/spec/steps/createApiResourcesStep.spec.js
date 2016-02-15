@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import createApiResourcesStep from "../../steps/createApiResourcesStep.js";
+import createApiResourcesStep from "../../lib/steps/createApiResourcesStep.js";
 
 describe("createApiResourcesStep", () => {
 	let createResourceSpy,

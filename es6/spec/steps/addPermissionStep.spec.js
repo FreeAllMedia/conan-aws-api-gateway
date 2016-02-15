@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import addPermissionStep from "../../steps/addPermissionStep.js";
+import addPermissionStep from "../../lib/steps/addPermissionStep.js";
 
 describe("addPermissionStep", () => {
 	let addPermissionSpy,

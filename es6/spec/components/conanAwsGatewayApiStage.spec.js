@@ -1,8 +1,7 @@
-import Conan from "conan";
-import ConanAwsApiGateway from "../../components/conanAwsApiGateway.js";
-import ConanAwsApiGatewayStage from "../../components/conanAwsApiGatewayStage.js";
-import ConanAwsApiGatewayResource from "../../components/conanAwsApiGatewayResource.js";
-import ConanComponent from "../../../../components/conanComponent.js";
+import Conan, { ConanComponent } from "conan";
+import ConanAwsApiGateway from "../../lib/components/conanAwsApiGateway.js";
+import ConanAwsApiGatewayStage from "../../lib/components/conanAwsApiGatewayStage.js";
+import ConanAwsApiGatewayResource from "../../lib/components/conanAwsApiGatewayResource.js";
 import inflect from "jargon";
 
 describe("ConanAwsApiGatewayStage(conan, name)", () => {

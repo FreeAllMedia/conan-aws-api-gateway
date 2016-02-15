@@ -1,7 +1,7 @@
 import Conan from "conan";
 import sinon from "sinon";
 import chai from "chai";
-import createApiStep from "../../steps/createApiStep.js";
+import createApiStep from "../../lib/steps/createApiStep.js";
 
 describe("createApiStep", () => {
 	let createRestApiSpy,

@@ -3,7 +3,7 @@
   "name": "conan-aws-api-gateway",
   "version": "0.1.0",
   "description": "Conan: The Deployer plugin for the Api Gateway service of the AWS provider.",
-  "main": "index.js",
+  "main": "es5/lib/conanAwsApiGatewayPlugin.js",
   "scripts": {
     "test": "gulp test"
   },
