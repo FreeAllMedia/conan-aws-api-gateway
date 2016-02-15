@@ -1,6 +1,8 @@
 # Conan-aws-api-gateway.js [![npm version](https://img.shields.io/npm/v/conan-aws-api-gateway.svg)](https://www.npmjs.com/package/conan-aws-api-gateway) [![license type](https://img.shields.io/npm/l/conan-aws-api-gateway.svg)](https://github.com/FreeAllMedia/conan-aws-api-gateway.git/blob/master/LICENSE) [![npm downloads](https://img.shields.io/npm/dm/conan-aws-api-gateway.svg)](https://www.npmjs.com/package/conan-aws-api-gateway) ![ECMAScript 6 & 5](https://img.shields.io/badge/ECMAScript-6%20/%205-red.svg)
 
-Conan: The Deployer plugin for the Api Gateway service of the AWS provider.
+Plugin for ["Conan: The Deployer"](https://github.com/FreeAllMedia/conan) enabling the Api Gateway service from the AWS provider.
+Normally, you will use this along with the [conan-aws-lambda](https://github.com/FreeAllMedia/conan-aws-lambda) plugin, so you can point your resources to a lambda function.
+Check out the example:
 
 ```javascript
 import conan from "conan";
@@ -8,6 +10,20 @@ import ConanAwsApiGatewayPlugin from "conan-aws-api-gateway";
 
 conan = new Conan();
 conan.use(ConanAwsApiGatewayPlugin);
+
+conan
+	.api("myApi")
+		.stage("staging")
+			.get("/myResources/{id}") //define your entire resource path with path parameters mapped automatically
+			.headers("Content-Type", "Custom-Header") //define your headers easily
+			.lambda("myLambda", "staging") //this is when you want to point the resource to an existing lambda, with alias support!
+			.statusCodes({
+				"200": "",
+				"500": "Internal*" //this is the selection pattern to exeute on the error message to throw a 500 http status code
+			})
+			.responseHeaders({
+				"Allow-Control-Allow-Origin": "*" //this will enable cors on that resource
+			});
 ```
 
 # Quality and Compatibility
