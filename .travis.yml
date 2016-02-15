@@ -1,5 +1,7 @@
 language: node_js
 node_js:
+- '5'
+- '4'
 - '0.12'
 - '0.11'
 - '0.10'
@@ -11,10 +13,10 @@ before_script:
 after_success:
 - ./node_modules/coveralls/bin/coveralls.js < ./lcov.info
 deploy:
-	provider: npm
-	email: fam-operations@freeallmedia.com
-	api_key:
-		secure: p7XB4q5CT7HXpsqIlu/xEbThjS8bcF2KDDLvX5VAqOtzF/oZl+NVVLsoAMGw9UAtOtlwhbLG79eiD9Q2ITEROfKdrD/vP6vBh5K4mRze9pNo0B2YXX2DhQ1KqmFsYpx4SuWClI30cuj9ZXy3quSJ1a1xXPFUPAV5d9Sg7OFdb0uTX9spY6NQosVhd+xqaSOrJEWevxR+YhVa5gYeb1MZwt4pv610e3Pqm8g4RKgWBmHSRSsVnwKcqVye1RNsOSukSmkP+YRQ3AXIMh9z4JmCWLIp2KShL0nGxnNPYSexWksKLCDsXe2Vc8X5yoQxc9lbNDJ7Z+FzHQnICzq+q0ieLFxlgSqIksCO0D/gEfkZrRS0CwA4GEuk99GWJKOwagdTaYlEXe51dSO6t0bNMlksnX4SqhZjk80nPO2C0xHLJGH2JJEIszrsakqEMrGlSKK4e1FmYa5rlMTkW4dKUa22Xs5+CfcigpsozrMoYl46JQomtuPBfezeEr+rtYbDzYCvq5LgJ30FwFBpiE5rhdujujeo8+K3uymFkt9ICI892Nyn+BeRNabs4UgLVUjvVAmdes1AzlMh0ceIjyyY9jCOkzhb5gWRHHyi2nrmPxVQCdbtZF9Q2gnowssQGzBN0oLvQa0Wo+eXyIgUXyWa+ABP8zx0rVj0F/e6Oko1G0TL8Qo=
-	on:
-		repo: FreeAllMedia/conan-aws-api-gateway
-		branch: master
+  provider: npm
+  email: fam-operations@freeallmedia.com
+  api_key:
+    secure: p7XB4q5CT7HXpsqIlu/xEbThjS8bcF2KDDLvX5VAqOtzF/oZl+NVVLsoAMGw9UAtOtlwhbLG79eiD9Q2ITEROfKdrD/vP6vBh5K4mRze9pNo0B2YXX2DhQ1KqmFsYpx4SuWClI30cuj9ZXy3quSJ1a1xXPFUPAV5d9Sg7OFdb0uTX9spY6NQosVhd+xqaSOrJEWevxR+YhVa5gYeb1MZwt4pv610e3Pqm8g4RKgWBmHSRSsVnwKcqVye1RNsOSukSmkP+YRQ3AXIMh9z4JmCWLIp2KShL0nGxnNPYSexWksKLCDsXe2Vc8X5yoQxc9lbNDJ7Z+FzHQnICzq+q0ieLFxlgSqIksCO0D/gEfkZrRS0CwA4GEuk99GWJKOwagdTaYlEXe51dSO6t0bNMlksnX4SqhZjk80nPO2C0xHLJGH2JJEIszrsakqEMrGlSKK4e1FmYa5rlMTkW4dKUa22Xs5+CfcigpsozrMoYl46JQomtuPBfezeEr+rtYbDzYCvq5LgJ30FwFBpiE5rhdujujeo8+K3uymFkt9ICI892Nyn+BeRNabs4UgLVUjvVAmdes1AzlMh0ceIjyyY9jCOkzhb5gWRHHyi2nrmPxVQCdbtZF9Q2gnowssQGzBN0oLvQa0Wo+eXyIgUXyWa+ABP8zx0rVj0F/e6Oko1G0TL8Qo=
+  on:
+    repo: FreeAllMedia/conan-aws-api-gateway
+    branch: master
