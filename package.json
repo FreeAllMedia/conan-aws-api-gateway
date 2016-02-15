@@ -1,0 +1,79 @@
+{
+  "generatorVersion": "0.2.21",
+  "name": "conan-aws-api-gateway",
+  "version": "0.1.0",
+  "description": "Conan: The Deployer plugin for the Api Gateway service of the AWS provider.",
+  "main": "es5/lib/conanAwsApiGatewayPlugin.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FreeAllMedia/conan-aws-api-gateway.git"
+  },
+  "keywords": [
+    "conan",
+    "aws",
+    "lambda",
+    "deploy",
+    "deployment",
+    "deployer",
+    "serverless",
+    "api",
+    "gateway",
+    "amazon",
+    "web",
+    "services",
+    "aurora",
+    "dynamodb"
+  ],
+  "author": "Free All Media, LLC",
+  "contributors": [
+    {
+      "name": "nicosommi",
+      "email": "nicosommi@gmail.com"
+    },
+    {
+      "name": "dcrockwell",
+      "email": "dcautomates@gmail.com"
+    },
+    {
+      "name": "paulgoggin",
+      "email": "pgoggin@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreeAllMedia/conan-aws-api-gateway/issues"
+  },
+  "homepage": "https://github.com/FreeAllMedia/conan-aws-api-gateway",
+  "dependencies": {
+    "aws-sdk": "^2.2.24",
+    "flowsync": "^0.1.12",
+    "hacher": "^0.1.4",
+    "jargon": "^0.1.22"
+  },
+  "devDependencies": {
+    "babel": "^6.5.1",
+    "babel-core": "^6.5.1",
+    "babel-eslint": "^4.1.8",
+    "babel-preset-es2015": "^6.5.0",
+    "chai": "^3.0.0",
+    "compare-version": "^0.1.2",
+    "conan": "0.0.17",
+    "coveralls": "^2.11.2",
+    "eslint": "^1.10.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-babel-istanbul": "^0.11.0",
+    "gulp-if": "^2.0.0",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-mocha": "^2.1.3",
+    "gulp-util": "^3.0.6",
+    "mocha": "^2.2.5",
+    "run-sequence": "^1.1.5",
+    "sinon": "^1.17.2",
+    "stream-buffers": "^3.0.0",
+    "superstack": "0.0.4"
+  }
+}
