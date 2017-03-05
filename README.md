@@ -5,10 +5,10 @@ Normally, you will use this along with the [conan-aws-lambda](https://github.com
 Check out the example:
 
 ```javascript
-import conan from "conan";
+import Conan from "conan";
 import ConanAwsApiGatewayPlugin from "conan-aws-api-gateway";
 
-conan = new Conan();
+const conan = new Conan();
 conan.use(ConanAwsApiGatewayPlugin);
 
 conan
@@ -19,7 +19,7 @@ conan
 			.lambda("myLambda", "staging") //this is when you want to point the resource to an existing lambda, with alias support!
 			.statusCodes({
 				"200": "",
-				"500": "Internal*" //this is the selection pattern to exeute on the error message to throw a 500 http status code
+				"500": "Internal*" //this is the selection pattern to execute on the error message to throw a 500 http status code
 			})
 			.responseHeaders({
 				"Allow-Control-Allow-Origin": "*" //this will enable cors on that resource
