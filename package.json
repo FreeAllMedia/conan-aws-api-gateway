@@ -51,7 +51,7 @@
     "aws-sdk": "^2.2.24",
     "flowsync": "^0.1.12",
     "hacher": "^0.1.4",
-    "jargon": "^0.1.22"
+    "jargon": "^0.2.0"
   },
   "devDependencies": {
     "babel": "^6.5.1",
